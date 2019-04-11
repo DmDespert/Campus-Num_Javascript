@@ -82,7 +82,7 @@ Vous pouvez utiliser cette expression pour avoir un numéro de coureur aléatoir
 
 5. Entrer différentes combinaisons de valeurs pour les deux variables et vérifier le bon fonctionnement de votre programme.
 
-6. Ajouter un block `else` dans votre code disant simplement : 'Go to see the registration desk' pour les personnes ne rentrant pas dans les cas précédents.
+6. Ajouter un block `else` dans votre code disant simplement : 'Go see the registration desk' pour les personnes ne rentrant pas dans les cas précédents.
 
 
 # Exo-3 - Les fonctions
