@@ -150,20 +150,20 @@ Vous aurez besoin de la [documentation sur les tableaux](https://developer.mozil
 
 # Exo-5 - Les boucles
 
-Les baleines (!) traduisent les phrases comme : 'Turpentine and turtles' par: 'UEIEAUE'.
+Les baleines traduisent les phrases comme : 'Turpentine and turtles' par: 'UEIEAUE'.
 
-Il y a une règle simple : Pas de consonnes, uniquement les voyelles, pas d'espace et toutes les lettres en majuscules.
+Comment ? Il y a une règle simple : Pas de consonnes, uniquement les voyelles, pas d'espace et toutes les lettres en majuscules.
 
 Pour faire cette traduction, nous allons utiliser des boucles.
 
 1. Créer une variable nommée `input` qui prends pour valeur n'importe quelle phrase ou mot à traduire.
 
-2. Nous allons aussi créer un tableau de lettres. Puisque la langue des baleines contient que des voyelles, créer une variable `vowels` de type tableau contenant toutes les voyelles.
+2. Créer maintenant un tableau de lettres. Puisque la langue des baleines ne contient que des voyelles, créer une variable `vowels` de type tableau, contenant toutes les voyelles de l'alphabet.
 
-3. Nous allons stocker la chaine traduite dans un tableau. Créer donc une variable `resultArray` dont la valeur est un tableau vide.
+3. On aura besoin de stocker la chaine traduite dans un tableau. Pour cela, créer une variable `resultArray` dont la valeur est un tableau vide, pour le moment.
 
-4. Maintenant notre but est de trouver toutes les voyelles dans notre chaine initiale, on peut le faire en vérifiant si la première lettre est une voyelle, puis la deuxième etc...
-Créer donc une boucle qui parcours toutes les lettres de notre chaine de caractères. A l'intérieur de la boucle afficher simplement la lettre courante.
+4. Essayons maintenant de trouver toutes les voyelles dans notre chaine initiale : on peut le faire en vérifiant si chaque lettre de notre texte est une voyelle. Pour cela, on peut regarder si la première lettre est une voyelle, puis la deuxième, etc.
+Créer donc une boucle qui parcourt toutes les lettres de notre chaine de caractères. A l'intérieur de cette boucle, afficher la lettre courante dans la console.
 
 5. Maintenant nous devons vérifier si la lettre courante est une voyelle autrement dit si la lettre courante est une lettre du tableau `voyels`. Utiliser la méthode `indexOf` des tableaux pour faire ca.
 
