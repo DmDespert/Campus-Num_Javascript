@@ -3,13 +3,13 @@
 Afin de faire ces exercices, il est préférable d'avoir réalisé les tutoriels de 1 à 6 du [cours "Introduction to JavaScript" du site Codecademy](https://www.codecademy.com/learn/introduction-to-javascript).
 Une fois réalisés, ces exercices vous permettront de valider les acquis.
 
-# Exo-0 - Lecture de code JavaScript.
+## Ex 0 - Lecture de code JavaScript.
 
 Avant d'écrire du code JavaScript, il est important de savoir le lire, c'est le but de cette partie.
 
 Rendez vous dans le répertoire `/exo-0`
 
-## Section 1 : Commentaires
+### Section 1 : Commentaires
 
 L'objectif est de commenter **chaque ligne de code** du fichier `index.html` avec une phrase en français qui explique ce qu'elle fait.
 
@@ -21,11 +21,11 @@ var a = 38; // je déclare une variable nommée a qui prend pour valeur l'entier
 
 Faire ou compléter une fiche mémo qui reprend les différentes expressions.
 
-## Section 2 : Utilisation de la console
+### Section 2 : Utilisation de la console
 
 En utilisant les variables déclarées plus haut, afficher dans la console les différentes consignes.
 
-## Section 3 : Undefined
+### Section 3 : Undefined
 
 Décommenter la ligne puis recharger la page.
 
@@ -35,7 +35,7 @@ Décommenter la ligne puis recharger la page.
 
 Que se passe-t-il et pourquoi ?
 
-# Exo-1 - Les variables
+## Ex 1 - Les variables
 
 La température aujourd'hui est de 294 Kelvin.
 
@@ -63,7 +63,7 @@ Remplacer la première ligne de code par :
 et relancer le programme.
 
 
-# Exo-2 - Les conditions
+## Ex 2 - Les conditions
 
 Vous avez été recruté pour écrire un programme pour gérer les inscriptions d'une course à pied. Tous les adultes courront le matin et tous les personnes qui ont moins de 18 ans l'après midi. Suivez les instructions afin de développer la logique du programme.
 
@@ -85,7 +85,7 @@ Vous pouvez utiliser cette expression pour avoir un numéro de coureur aléatoir
 6. Ajouter un block `else` dans votre code disant simplement : 'Go see the registration desk' pour les personnes ne rentrant pas dans les cas précédents.
 
 
-# Exo-3 - Les fonctions
+## Ex 3 - Les fonctions
 
 Vous allez programmer la logique du jeu Pierre, Feuille, Ciseau. Vous jouerez contre l'ordinateur. Pour se souvenir des [règles, cliquer ici](https://www.pierrefeuilleciseaux.fr/pierre-feuille-ciseaux-les-regles-classiques/).
 
@@ -134,7 +134,7 @@ Maintenant appeler la fonction `playGame()`
 
 11. On va ajouter un petit code secret afin d'être certain de gagner dans tous les cas : si l'utilisateur rentre 'bomb' alors il a gagné. Modifier votre code en fonction.
 
-# Exo-4 - Les tableaux.
+## Ex 4 - Les tableaux
 
 `var secretMessage = ["Learning", "isn't", "about", "what", "you", "get", "easily", "the", "first", "time,", "it's", "about", "what", "you", "can", "figure", "out.", "-2015,", "Chris", "Pine,", "Learn", "JavaScript"];`
 
@@ -148,7 +148,7 @@ Vous aurez besoin de la [documentation sur les tableaux](https://developer.mozil
 6. Utiliser une méthode pour remplacer les mots 'get', 'right', 'the', 'first', 'time' par 'know'.
 7. Utiliser la méthode `.join` pour afficher le message secret à la console.
 
-# Exo-5 - Les boucles
+## Ex 5 - Les boucles
 
 Les baleines traduisent les phrases comme : 'Turpentine and turtles' par: 'UEIEAUE'.
 
@@ -175,8 +175,7 @@ Créer donc une boucle qui parcourt toutes les lettres de notre chaine de caract
 
 9. Lancer votre programme et chanter la traduction !
 
-
-# Exo-6 : Les objets
+## Ex 6 - Les objets
 
 Vous devez avoir terminé le cours 8 de Codecademy ( exercices 1 à 7 ) sur les Objets pour faire cet exercice.
 
@@ -186,9 +185,9 @@ Vous devez avoir terminé le cours 8 de Codecademy ( exercices 1 à 7 ) sur les 
 
 Nous avons besoin dans un premier temps d'une structure de données permettant de stocker des informations multiples sur notre équipe : créer une variable 'team' dont la valeur est un objet vide.
 
-3. Notre équipe a des joueurs qui jouent des matches. Nous voulons représenter les deux. Ajouter deux propriétés à votre objet : `_players` et  `_games` toutes les deux étant des tableaux vides.
+3. Notre équipe a des joueurs qui jouent des matchs. Nous voulons représenter les deux. Ajouter deux propriétés à votre objet : `players` et  `games` toutes les deux étant des tableaux vides.
 
-4. Remplir le tableau `_players` avec des données dans le format spécifique :
+4. Remplir le tableau `players` avec des données sous ce format :
 
 ```js
 {
@@ -198,7 +197,7 @@ Nous avons besoin dans un premier temps d'une structure de données permettant d
 }
 ```
 
-5. Remplir le tableau `_games` avec des données dans le format spécifique :
+5. Remplir le tableau `games` avec des données sous ce format :
 
 ```js
 {
@@ -208,82 +207,87 @@ Nous avons besoin dans un premier temps d'une structure de données permettant d
 }
 ```
 
-6. Nous voulons ajouter un nouveau joueur à votre équipe, créer une fonction `addPlayer` qui prends trois arguments : first, last, et age et ajoute à l'objet `team` un joueur.
+6. Nous allons maintenant ajouter un nouveau joueur à l'équipe. Créer une méthode `addPlayer` qui prend trois arguments : `firstName`, `lastName`, et `age` et qui ajoute un joueur au tableau `players`.
 
 7. Appeler cette méthode et vérifier son bon fonctionnement.
 
-8. Faire la même chose pour un match.
+8. Faire la même chose pour les matchs, stockés dans le tableau `games`
 
-9. Appeler vos fonctions plusieurs fois pour avoir un object avec suffisamment de données.
+9. Appeler vos fonctions plusieurs fois pour avoir un objet avec suffisamment de données.
 
 10. Calculer la somme des points de votre équipe sur tous les matchs joués.
 
 11. Calculer la moyenne des points de l'équipe adverse sur tous les matchs.
 
-12. Ecrire une fonction qui permet de trouver le joueur le plus agé.
+12. Ecrire une fonction qui permet de trouver le joueur le plus âgé.
 
 13. Bonus: Trier les joueurs par ordre alphabétique.
 
 
-# Exo-7 : Aller plus loin
+## Ex 7 - Listing d'articles sur un site marchand
 
 Nous allons essayer de nous rapprocher d'un site marchand.
-Nous vous fournissons un jeu de données qui reprends des articles qu'on peut retrouver sur un site de commerce type leboncoin.
+Nous vous fournissons un jeu de données qui reprend des articles que l'on peut retrouver sur un site de commerce en ligne type Le bon coin.
 
-Dans cet exercice, vous allez lier la partie HTML et Javascript.
-Ces manipulations seront à faire avec du pur Javascript, cela vous permettra de mieux comprendre la partie JQuery qui suivra.
+Dans cet exercice, vous allez lier la partie HTML et Javascript afin de mettre en pratique ce que vous avez appris dans un contexte un peu plus concret.
+
+Ces manipulations seront à faire avec du pur JavaScript, cela vous permettra de mieux comprendre la partie jQuery qui suivra.
 
 Voici quelques pages de docs pouvant vous servir.
+
 https://www.w3schools.com/js/js_htmldom.asp
+
 https://developer.mozilla.org/fr/docs/Apprendre/JavaScript/Client-side_web_APIs/Manipulating_documents
+
 https://www.tutorialrepublic.com/javascript-tutorial/javascript-dom-manipulation.php
+
 https://dom-tutorials.appspot.com/static/index.html
 
-Voici quelques idées afin de mettre en pratique ce que vous avez appris dans un contexte un peu plus concret:
+### Administrer un catalogue d'articles depuis une page web 
 
-1. Parcourir les items fournis pour les afficher un à un dans la console
+1. Parcourir les articles fournis pour les afficher un à un dans la console
 
-2. Créer un objet qui servira à traduire les types. Cet objet aura pour structure {type : "type traduit"}. Par exemple {videoGame:"Jeux Vidéos"}.
+2. Créer un objet qui servira à traduire les types. Cet objet aura pour structure `{type : "type traduit"}`. Par exemple `{videoGame:"Jeux Vidéos"}`.
 
-3. Ajouter une nouvelle clé aux objets existants pour sotcker le type traduit. Répéter le 1 pour vérifier le type traduit
+3. Ajouter une nouvelle clé aux objets existants pour stocker le type traduit, sans modifier le fichier data.js. Répéter l'étape 1 pour vérifier le type traduit.
 
-4. Créer une champ texte et un bouton. Lorsqu'on clique sur le bouton, on n'affiche que les articles que du type écrit.
+4. Créer une page HTML et lister les articles depuis la donnée.
 
-5. Faire une checkbox pour afficher ou non les items en rupture de stock.
+5. Créer une champ texte et un bouton. Au clic sur le bouton, afficher les articles du type entré dans le champ texte.
 
-6. Ajouter la possibilité de trier les articles par nom ou par prix  et donner le choix de trier par ordre ASC/DESC.
+6. Ajouter une checkbox pour afficher ou non les articles en rupture de stock.
 
-7. Ajouter un formulaire simple permettant d'ajouter un objet à la liste d'objets.
+7. Créer la fonctionnalité de tri des articles par nom ou par prix, et donner le choix de trier par ordre ASC ou DESC.
 
-8. Modifier la structure de données (data.js) afin d'avoir une structure de données comme décrit dans le fichier datas2.js (remonter le type d'un niveau et ajouter un contact à l'objet).
-Ceci permettra d'avoir une structure qui liste les catégories composées d'une clé type et une clé items qui soncitent tous les objets qui correspondent au type de la catégorie.
+8. Ajouter un formulaire simple permettant d'ajouter un article à la liste.
 
-9. Afficher tous les contacts.
+9. Retravailler la structure de données dans `data.js` afin d'avoir une structure de données comme décrite dans le fichier `datas2.js`. Pour cela, remonter le type d'un niveau et ajouter un contact à l'objet.
 
-10. Faites fonctionner votre page avec cette nouvelle structure.
+Ceci permettra d'avoir une structure qui liste les catégories composées d'une clé `type` et une clé `items` qui contient tous les objets de la catégorie `type`.
 
-# Exo-7-bonus : Aller vraiment plus loin
+10. Afficher tous les contacts.
 
-Faire les exercices en console c'est bien, mais il est plus intéressant d'utiliser la page web fournie.
-Le but final sera d'adapter l'exercice 7 en affichant les objets dans la table fournie au lieu de la console.
-Pour cela reprenez votre datas.js issu de 10. Nous allons utiliser la page html fournie.
+11. Faites fonctionner votre page avec cette nouvelle structure.
 
-Nous proposons l'utilisation de bootstrap 4.3 (https://getbootstrap.com/docs/4.3/getting-started/introduction/)
-Ce n'est pas obligatoire mais c'est un peu plus joli.
+### Mise en forme
 
-Vous êtes libre d'adapter la table (comme ajouter une colonne contact).
+Pour rendre l'utilisation de votre application plus facile, nous allons maintenant travailler son ergonomie.
 
+1. Charger [Bootstrap 4.3](https://getbootstrap.com/docs/4.3/getting-started/introduction/) dans le projet.
 
-1. Afficher les objets du data dans la table.
+1. Afficher les articles et leurs contacts dans un tableau, en utilisant un tableau depuis la documentation de Bootstrap.
 
-2. Faire en sorte qu'en ajoutant un nouvel objet il s'ajoute aussi dans la table.
+2. Faire en sorte qu'en ajoutant un nouvel objet, il s'ajoute aussi dans le tableau.
 
-3. Adapter votre filtre et votre tri à la table.
+3. Adapter le filtre et le tri au tableau.
 
-4. Transformer le filtre (anciennement un champ texte) en une liste déroulante basée sur votre datas (il faut évidemment afficher la traduction et s'il n'y en a pas afficher le type simple).
+4. Transformer le filtre d'un champ texte en liste déroulante basée sur votre data. Si un traduction est disponible, l'afficher à la place du nom du type.
 
-5. Ajouter une checkbox au début de chaque ligne pour pouvoir sélectionner un ou plusieurs objets.
+### Fonctionnalités bonus
+1. Ajouter une checkbox au début de chaque ligne pour pouvoir sélectionner un ou plusieurs articles.
 
-6. Ajouter un panier basé sur les items sélectionnés et réduira les quantités disponibles. (Vous pourrez changer la structure de données afin d'avoir des id)
+2. Quand des articles sont sélectionnés, afficher un bouton "Ajouter au panier".
 
-7. Afficher le nombre d'artcile et le prix du panier. Une fois qu'on valide le panier on veut déduire les quantités disponibles des items sélectionnées.
+_Vous pouvez ici changer la structure de données pour vous aider._
+
+3. Afficher le nombre d'articles et le prix total dans un panier d'achats. À la validation du panier, déduire les quantités disponibles des articles sélectionnées.
