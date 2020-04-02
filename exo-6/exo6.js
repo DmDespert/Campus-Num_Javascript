@@ -1,7 +1,6 @@
-// Partie 8 code academy
+// Cours 8 de Codecademy
 console.log("exo-6");
 
-// commenter cette ligne de code.
 var joeInfo = {
     name: "Joe's house",
     rooms: 5,
@@ -9,9 +8,10 @@ var joeInfo = {
     bathrooms: 1 + 2,
     cars: ['Clio', 'Van'],
 };
+// ! Ne faites pas de modification au dessus de cette ligne !
 
-// afficher le nombre de voitures de Joe
+// 1. Afficher le nombre de voitures de Joe
 
-// changer le nombre de salle de bains de Joe : il n'en possède au'une.
+// 2. Changer le nombre de salles de bains de Joe : il n'en possède qu'une. Afficher le nouveau nombre de salles de bain.
 
-// Joe vient d'acquérir un garage changer la structure pour le refléter.
+// 3. Joe vient d'acquérir un garage. Afficher cette nouvelle information. 
