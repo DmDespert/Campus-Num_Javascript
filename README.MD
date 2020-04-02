@@ -1,13 +1,13 @@
-# Activités Javascript
+# Activités JavaScript
 
 Afin de faire ces exercices, il est préférable d'avoir réalisé les tutoriels de 1 à 6 du site [codecademy](https://www.codecademy.com/).
-Une fois fait, ces exercices vous permettront de valider les acquis.
+Une fois réalisés, ces exercices vous permettront de valider les acquis.
 
-# Exo-0 - Lecture de code Javascript.
+# Exo-0 - Lecture de code JavaScript.
 
-Avant d'écrire du code javascript, il est important de savoir en lire, c'est le but de cette partie.
+Avant d'écrire du code JavaScript, il est important de savoir le lire, c'est le but de cette partie.
 
-Rendez vous dans le répertoire exo-0
+Rendez vous dans le répertoire `/exo-0`
 
 ## Section 1 : Commentaires
 
@@ -19,7 +19,7 @@ Par exemple :
 var a = 38; // je déclare une variable nommée a qui prend pour valeur l'entier 38.
 ```
 
-Faire ou compléter une fiche mémo qui reprends les différentes expressions.
+Faire ou compléter une fiche mémo qui reprend les différentes expressions.
 
 ## Section 2 : Utilisation de la console
 
@@ -39,11 +39,11 @@ Que se passe-t-il et pourquoi ?
 
 La température aujourd'hui est de 294 Kelvin.
 
-1. Pour commencer, créer une variable `kelvin` qui prends pour valeur 294;
+1. Pour commencer, créer une variable `kelvin` qui prend pour valeur 294;
 
 Nous pouvons aussi exprimer une température en Celsius. La température en Celsius est de 273 degrés inférieure à celle en Kelvin.
 
-2. Convertisser la température en Kelvin en stockant le résultat dans une variable nommée `celsius`.
+2. Convertir la température en Kelvin en stockant le résultat dans une variable nommée `celsius`.
 Ecrire un commentaire pour expliquer cette ligne de code.
 
 Nous pouvons aussi exprimer une température en Fahrenheit avec la formule :
@@ -51,11 +51,11 @@ Nous pouvons aussi exprimer une température en Fahrenheit avec la formule :
 
 3. En utilisant cette équation, calculer la température en Fahrenheit et stocker le résultat dans une variable nommée `fahrenheit`. Ecrire un commentaire pour expliquer cette ligne de code.
 
-Lorsque nous faisons cette convertion, il est très probable d'avoir un nombre avec des décimales, nous allons donc arrondir ce nombre.
+Lorsque nous faisons cette conversion, il est très probable d'avoir un nombre avec des décimales, nous allons donc arrondir ce nombre.
 
 4. En utilisant la méthode `.floor()` de la bibliothèque standard, modifier le résultat de la variable `fahrenheit` pour obtenir un entier. Ecrire un commentaire pour expliquer cette ligne de code.
 
-5. Nous voulons modifier le programme afin de demander la température en Kelvin à l'utilisateur et lui afficher ensuite les convertions dans le console du navigateur.
+5. Nous voulons modifier le programme afin de demander la température en Kelvin à l'utilisateur et lui afficher ensuite les conversions dans la console du navigateur.
 Remplacer la première ligne de code par :
 
 `var kelvin = prompt("Quelle est la température en Kelvin aujourd'hui ?");`
@@ -91,44 +91,44 @@ Vous allez programmer la logique du jeu Pierre, Feuille, Ciseau. Vous jouerez co
 
 Notre code va se décomposer en 4 parties :
 * Récupérer le choix de l'utilisateur
-* Récupérer le choix du programme.
+* Récupérer le choix du programme
 * Comparer les choix
-* Annoncer le gagnant.
+* Annoncer le gagnant
 
-1. Créer une fonction `getUserChoice()` qui prends en paramètre un seul argument `userInput`
+1. Créer une fonction `getUserChoice()` qui prend en paramètre un seul argument `userInput`
 
-2. Puisque nous ne pouvons pas être certain que l'utilisateur va taper  'Rock' ou 'rock', nous allons dans un premier temps utiliser la fonction `toLowerCase()` pour rendre minuscule la chaine de caractère `userInput`.
+2. Puisque nous ne pouvons pas être certains que l'utilisateur va taper  'Rock' ou 'rock', nous allons dans un premier temps utiliser la fonction `toLowerCase()` pour transformer en minuscule la chaine de caractère `userInput`.
 
 3. Nous devons aussi nous assurer que l'utilisateur rentre bien un des trois choix : 'rock', 'paper', ou 'scissors'.
-A l'intérieur de la fonction `getUserChoice()`, écrire une condition qui vérifie que la valeur rentrée par l'utilisateur est bien l'une des trois attendues i.e. 'rock', 'paper', ou 'scissors'. Si c'est le cas, la fonction retourne la chaine de caractères `userInput`, sinon afficher un message d'erreur dans la console.
+A l'intérieur de la fonction `getUserChoice()`, écrire une condition qui vérifie que la valeur rentrée par l'utilisateur est bien l'une des trois valeurs attendues i.e. 'rock', 'paper', ou 'scissors'. Si c'est le cas, la fonction retourne la chaine de caractères `userInput`, sinon afficher un message d'erreur dans la console.
 
 4. Maintenant c'est à l'ordinateur de faire un choix.
-Créer une nouvelle fonction `getComputerChoice()` qui ne prends pas de paramètre.
+Créer une nouvelle fonction `getComputerChoice()` qui ne prend pas de paramètre.
 A l'intérieur, en utilisant la fonction `Math.random()`, tirer un nombre aléatoire entre 0 et 2. Ensuite, étant donné le résultat, la fonction doit retourner 'rock', 'paper', ou 'scissors'.
 
 Maintenant, nous devons déterminer le gagnant.
 
-5. Créer une fonction `determineWinner()` qui prends deux paramètres `userChoice` et `computerChoice`
+5. Créer une fonction `determineWinner()` qui prend deux paramètres `userChoice` et `computerChoice`
 
-Cette fonction va comparer les choix et va retourner soit :
+Cette fonction va comparer les choix et va retourner un de ces 3 résultats :
 * Tied : égalité
-* Won : l'utilisateur a gagné.
-* Lost : l'utilisateur a perdu.
+* Won : l'utilisateur a gagné
+* Lost : l'utilisateur a perdu
 
-6. Commencons par le cas d'égalité, à l'intérieur de la fonction `determineWinner()`, écrire une condition qui vérifie si le choix de l'utilisateur est égal à celui de l'ordinateur. Si c'est le cas, retourner le chaine de caractères 'Tied'.
+6. Commencons par le cas d'égalité, à l'intérieur de la fonction `determineWinner()`, écrire une condition qui vérifie si le choix de l'utilisateur est égal à celui de l'ordinateur. Si c'est le cas, retourner la chaîne de caractères 'Tied'.
 
-6. Si ce n'est pas une égalité alors quelqu'un a gagné. Commencer par vérifier si `userChoice` est `rock`. A l'intérieur de cette condition, vérifier si le choix de l'ordinateur est 'scissors', si oui alors retourner 'Won' sinon retourner 'Lost'.
+7. Si ce n'est pas une égalité alors quelqu'un a gagné. Commencer par vérifier si `userChoice` est `rock`. A l'intérieur de cette condition, vérifier si le choix de l'ordinateur est 'scissors'. Si oui, alors retourner 'Won'; si non retourner 'Lost'.
 
-7. Ensuite, écriver une nouvelle condition pour déterminer si le choix de l'utilisateur est 'paper'. A l'intérieur de cette condition, en fonction du choix de l'ordinateur, retourner 'Lost' ou 'Won'
+8. Ensuite, écrir une nouvelle condition pour déterminer si le choix de l'utilisateur est 'paper'. A l'intérieur de cette condition, en fonction du choix de l'ordinateur, retourner 'Lost' ou 'Won'
 
-8. Traiter maintenant le cas où l'utilisateur a choisi 'scissors'.
+9. Traiter maintenant le cas où l'utilisateur a choisi 'scissors'.
 
-9. Nos fonctions sont prêtes, nous pouvons maintenant commencer le jeu.
-Créer une fonction `playGame()`, à l'intérieur de celle ci, créer une variable `uChoice` qui prends pour valeur le résultat de la fonction `getUserChoice()` en ajoutant l'argument de votre choix : 'rock', 'paper', or 'scissors'.
-Ensuite créer une autre variable `computerChoice` qui prends pour valeur le résultat de l'appel à la fonction `getComputerChoice()`.
-Afficher chacune de ses variables dans la console.
+10. Nos fonctions sont prêtes, nous pouvons maintenant commencer le jeu.
+Créer une fonction `playGame()`, à l'intérieur de celle ci, créer une variable `uChoice` qui prend pour valeur le résultat de la fonction `getUserChoice()` en ajoutant l'argument de votre choix : 'rock', 'paper', or 'scissors'.
+Ensuite créer une autre variable `computerChoice` qui prend pour valeur le résultat de l'appel à la fonction `getComputerChoice()`.
+Afficher chacune de ces variables dans la console.
 
-10. Affichons maintenant le vainqueur.
+11. Affichons maintenant le vainqueur.
 A l'intérieur de la fonction `playGame()`, appeller la fonction `determineWinner()` avec en paramètre les valeurs des variables `uChoice` et `computerChoice`. Pour connaitre le vainqueur vous devez mettre l'appel de la fonction à l'intérieur d'un `console.log()`.
 Maintenant appeler la fonction `playGame()`
 
@@ -143,7 +143,7 @@ Vous aurez besoin de la [documentation sur les tableaux](https://developer.mozil
 1. Utiliser une méthode pour enlever le dernier éléments du tableau `secretMessage`.
 2. Utiliser une méthode pour ajouter les mots 'to' and 'program' comme des éléments distincts à la fin du tableau.
 3. Changer le mot 'easily' par 'right' en accédant au bon index du tableau.
-4. Utiliser une méthode pour supprimer le premier éléments du tableau.
+4. Utiliser une méthode pour supprimer le premier élément du tableau.
 5. Utiliser une méthode pour ajouter la chaine "Programming" en début de tableau.
 6. Utiliser une méthode pour remplacer les mots 'get', 'right', 'the', 'first', 'time' par 'know'.
 7. Utiliser la méthode `.join` pour afficher le message secret à la console.
@@ -152,11 +152,11 @@ Vous aurez besoin de la [documentation sur les tableaux](https://developer.mozil
 
 Les baleines traduisent les phrases comme : 'Turpentine and turtles' par: 'UEIEAUE'.
 
-Comment ? Il y a une règle simple : Pas de consonnes, uniquement les voyelles, pas d'espace et toutes les lettres en majuscules.
+Comment ? Il y a une règle simple : pas de consonnes, uniquement les voyelles, pas d'espace et toutes les lettres en majuscules.
 
 Pour faire cette traduction, nous allons utiliser des boucles.
 
-1. Créer une variable nommée `input` qui prends pour valeur n'importe quelle phrase ou mot à traduire.
+1. Créer une variable nommée `input` qui prend pour valeur n'importe quelle phrase ou mot à traduire.
 
 2. Créer maintenant un tableau de lettres. Puisque la langue des baleines ne contient que des voyelles, créer une variable `vowels` de type tableau, contenant toutes les voyelles de l'alphabet.
 
@@ -165,16 +165,15 @@ Pour faire cette traduction, nous allons utiliser des boucles.
 4. Essayons maintenant de trouver toutes les voyelles dans notre chaine initiale : on peut le faire en vérifiant si chaque lettre de notre texte est une voyelle. Pour cela, on peut regarder si la première lettre est une voyelle, puis la deuxième, etc.
 Créer donc une boucle qui parcourt toutes les lettres de notre chaine de caractères. A l'intérieur de cette boucle, afficher la lettre courante dans la console.
 
-5. Maintenant nous devons vérifier si la lettre courante est une voyelle autrement dit si la lettre courante est une lettre du tableau `voyels`. Utiliser la méthode `indexOf` des tableaux pour faire ca.
+5. Maintenant nous devons vérifier si la lettre courante est une voyelle, autrement dit, si la lettre courante est une lettre du tableau `voyels`. Utiliser la méthode `indexOf` des tableaux pour le faire.
 
-5. Bonus: A la place de `indexOf`, écrire une seconde boucle.
+6. Bonus : à la place de `indexOf`, écrire une seconde boucle.
 
-6. Si la lettre est une voyelle, utiliser la méthode `.push()` sur le tableau `resultArray` afin d'y ajouter la lettre courante input[i]. Vérifier que le tableau `resultArray` contient que des voyelles.
+7. Si la lettre est une voyelle, utiliser la méthode `.push()` sur le tableau `resultArray` afin d'y ajouter la lettre courante input[i]. Vérifier que le tableau `resultArray` ne contient que des voyelles.
 
-7. Si vous afficher `resultArray`, vous observerez qu'il y a des virgules entre chaque élément. Pourquoi ?
-Utiliser les méthodes `join('')` et `toUpperCase()` pour un bon formattage.
+8. En affichant la valeur de `resultArray`, on observe qu'il y a des virgules entre chaque élément. Utiliser les méthodes `join()` et `toUpperCase()` pour un bon formatage.
 
-8. Lancer votre programme et chanter la traduction !
+9. Lancer votre programme et chanter la traduction !
 
 
 # Exo-6 : Les objets
