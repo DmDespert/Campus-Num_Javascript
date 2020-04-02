@@ -1,6 +1,6 @@
 # Activités JavaScript
 
-Afin de faire ces exercices, il est préférable d'avoir réalisé les tutoriels de 1 à 6 du site [codecademy](https://www.codecademy.com/).
+Afin de faire ces exercices, il est préférable d'avoir réalisé les tutoriels de 1 à 6 du [cours "Introduction to JavaScript" du site Codecademy](https://www.codecademy.com/learn/introduction-to-javascript).
 Une fois réalisés, ces exercices vous permettront de valider les acquis.
 
 # Exo-0 - Lecture de code JavaScript.
@@ -178,18 +178,17 @@ Créer donc une boucle qui parcourt toutes les lettres de notre chaine de caract
 
 # Exo-6 : Les objets
 
-Vous devez avoir fait le cours 8 ( exercices 1 à 7 ) de CodeAcademy pour faire cet exercice.
+Vous devez avoir terminé le cours 8 de Codecademy ( exercices 1 à 7 ) sur les Objets pour faire cet exercice.
 
-Un premier petit exercice se trouve dans le fichier javascript, commencer par répondre aux questions.
+1. Compléter le petit exercice qui se trouve en commentaire dans le fichier javascript de l'exercice.
 
-Nous voulons créer et extraire des informations à propos de votre équipe de sports préférés. ( Basketball, soccer, tennis, or water polo... vous choississez )
-C'est votre boulot de créer ces informations en utilisant les structures de données en Javascript appropriées : arrays, objects, etc.
+2. Nous allons maintenant créer et extraire des informations à propos de votre équipe de sports préférée. _Choississez votre sport : Basketball, soccer, tennis, water polo..._ Posez vous la question des différentes données à afficher à propos de cette équipe, et comment cette donnée peut être structurée.
 
-1. Nous voulons une structure de données permettant de stocker des informations sur notre équipe, créer une variable 'team' dont la valeur est un object vide.
+Nous avons besoin dans un premier temps d'une structure de données permettant de stocker des informations multiples sur notre équipe : créer une variable 'team' dont la valeur est un objet vide.
 
-2. Notre équipe a des joueurs qui jouent des matches. Nous voulons représenter les deux. Ajouter deux propriétés à votre objet : `_players` et  `_games` toutes les deux étant des tableaux vides.
+3. Notre équipe a des joueurs qui jouent des matches. Nous voulons représenter les deux. Ajouter deux propriétés à votre objet : `_players` et  `_games` toutes les deux étant des tableaux vides.
 
-3. Remplir le tableau `_players` avec des données dans le format spécifique :
+4. Remplir le tableau `_players` avec des données dans le format spécifique :
 
 ```js
 {
@@ -199,7 +198,7 @@ C'est votre boulot de créer ces informations en utilisant les structures de don
 }
 ```
 
-4. Remplir le tableau `_games` avec des données dans le format spécifique :
+5. Remplir le tableau `_games` avec des données dans le format spécifique :
 
 ```js
 {
@@ -209,21 +208,21 @@ C'est votre boulot de créer ces informations en utilisant les structures de don
 }
 ```
 
-5. Nous voulons ajouter un nouveau joueur à votre équipe, créer une fonction `addPlayer` qui prends trois arguments : first, last, et age et ajoute à l'objet `team` un joueur.
+6. Nous voulons ajouter un nouveau joueur à votre équipe, créer une fonction `addPlayer` qui prends trois arguments : first, last, et age et ajoute à l'objet `team` un joueur.
 
-6. Appeler cette méthode et vérifier son bon fonctionnement.
+7. Appeler cette méthode et vérifier son bon fonctionnement.
 
-7. Faire la même chose pour un match.
+8. Faire la même chose pour un match.
 
-8. Appeler vos fonctions plusieurs fois pour avoir un object avec suffisamment de données.
+9. Appeler vos fonctions plusieurs fois pour avoir un object avec suffisamment de données.
 
-9. Calculer la somme des points de votre équipe sur tous les matchs joués.
+10. Calculer la somme des points de votre équipe sur tous les matchs joués.
 
-10. Calculer la moyenne des points de l'équipe adverse sur tous les matchs.
+11. Calculer la moyenne des points de l'équipe adverse sur tous les matchs.
 
-11. Ecrire une fonction qui permet de trouver le joueur le plus agé.
+12. Ecrire une fonction qui permet de trouver le joueur le plus agé.
 
-12. Bonus: Trier les joueurs par ordre alphabétique.
+13. Bonus: Trier les joueurs par ordre alphabétique.
 
 
 # Exo-7 : Aller plus loin
