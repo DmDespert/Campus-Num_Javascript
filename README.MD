@@ -1,7 +1,27 @@
-# Activités JavaScript
+# DA - Activités Javascript
+
+## Pour la promotion Data Aspergers 2020
 
 Afin de faire ces exercices, il est préférable d'avoir réalisé les tutoriels de 1 à 6 du [cours "Introduction to JavaScript" du site Codecademy](https://www.codecademy.com/learn/introduction-to-javascript).
 Une fois réalisés, ces exercices vous permettront de valider les acquis.
+
+## Modalités de rendu.
+
+Tout votre travail doit être fait en utilisant **Git**. Votre avancement devra être présenté dans des commits, sous la forme suivante :
+
+- Un commit minimum par exercice, avec un message reprenant l'intitulé de l'exercice
+- Chaque commit contient les modifications de code **et** une modification du sujet pour renseigner l'avancement. 
+
+( Exemple de commit )
+Exemple pour le [premier exercice](https://github.com/campus-digital-grenoble/alternance-rattrapage-mobile-js#mise-en-place-dune-page) :
+
+<img width="956" alt="git-commit-list" src="https://user-images.githubusercontent.com/632197/42624459-bc56d8ac-85c5-11e8-83a5-b9058dd9c938.png">
+
+*Les fichiers readme sont [au format Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Pour chaque exercice que vous compléterez, cochez la case dans le sujet en rajoutant une croix :* 
+[Exemple de 1er commit](https://user-images.githubusercontent.com/632197/42624447-b7be13a0-85c5-11e8-8c31-4e2a1b191e45.png)
+[Exemple de 2nd commit](https://user-images.githubusercontent.com/632197/42624453-ba0e3568-85c5-11e8-9e49-c495b5edee2c.png)
+
+➡️ **Commencez donc par forker ce repo, et cloner votre fork. Vous aurez ainsi un projet dont vous serez propriétaire, qui contiendra ce readme à compléter**
 
 ## Ex 0 - Lecture de code JavaScript.
 
@@ -44,7 +64,7 @@ La température aujourd'hui est de 294 Kelvins.
 Nous pouvons aussi exprimer une température en Celsius. La température en Celsius est de 273 degrés inférieure à celle en Kelvins.
 
 2. Convertir la température en Kelvins en stockant le résultat dans une variable nommée `celsius`.
-Ecrire un commentaire pour expliquer cette ligne de code.
+   Ecrire un commentaire pour expliquer cette ligne de code.
 
 Nous pouvons aussi exprimer une température en Fahrenheit avec la formule :
 `Fahrenheits = Celsius * (9/5) + 32`
@@ -56,84 +76,103 @@ Lorsque nous faisons cette conversion, il est très probable d'avoir un nombre a
 4. En utilisant la méthode [`.floor()`](https://www.w3schools.com/jsref/jsref_floor.asp) de la bibliothèque standard, modifier le résultat de la variable `fahrenheits` pour obtenir un entier. Ecrire un commentaire pour expliquer cette ligne de code.
 
 5. Nous voulons modifier le programme afin de demander la température en Kelvins à l'utilisateur et lui afficher ensuite les conversions dans la console du navigateur.
-Remplacer la première ligne de code par :
+   Remplacer la première ligne de code par :
 
 `var kelvins = prompt("Quelle est la température en Kelvins aujourd'hui ?");`
 
 et relancer le programme.
 
-
 ## Ex 2 - Les conditions
 
-Vous avez été recruté pour écrire un programme pour gérer les inscriptions d'une course à pied. Tous les adultes courront le matin et toutes les personnes qui ont moins de 18 ans l'après midi. Suivez les instructions afin de développer la logique du programme.
+Le site [https://estcequecestbientotleweekend.fr/](https://estcequecestbientotleweekend.fr/) affiche un message selon le jour et l'heure dans la semaine : pas du tout, pas encore, bientôt, presque, c'est le weekend, etc... ). 
+Vous allez ici **récréer cette logique dans la console du navigateur**.
 
-1. Créer une variable pour stocker si un coureur est déjà inscrit ou pas. Quel est le type de cette variable ?
+1. Mise en place
 
-2. Créer une variable pour stocker l'âge du coureur.
+Commencer par créer une variable assignée à un objet Date :
 
-3. Chaque personne qui s'inscrit a un numéro de coureur supérieur à celui inscrit auparavant. Écrire une condition qui vérifie si la personne n'est pas déjà inscrite, et ajouter 1000 à son numéro si ce n'est pas le cas.
-Vous pouvez utiliser cette expression pour avoir un numéro de coureur aléatoire.
-`var raceNumber = Math.floor(Math.random()*1000);`
+`var myDate = new Date();`
 
-4. Ecrire une nouvelle condition en dessous de la première permettant d'afficher pour :
-    1. Les personnes qui ont plus de 18 ans et déjà inscrites : 'You will race at 9:30 am'
-    2. Les personnes déjà inscrites ou qui ont plus de 18 ans ( mais pas les deux ) 'You will race at 11:00 am ' plus leur numéro de dossard.
-    3. Les personnes de moins de 18 ans ou qui ne sont pas encore inscrites. 'You will race at 12:30 pm ' plus leur numéro de dossard.
+Vous pouvez désormais appeler des *méthodes* sur cette variable *myDate*. Retrouvez la liste des méthodes disponibles sur le site [https://www.w3schools.com/jsref/jsref_obj_date.asp](https://www.w3schools.com/jsref/jsref_obj_date.asp)
 
-5. Entrer différentes combinaisons de valeurs pour les deux variables et vérifier le bon fonctionnement de votre programme.
+Créer une variable de type *String* contenant le message à afficher dans le cas où nous sommes un jour de semaine.
 
-6. Ajouter un block `else` dans votre code disant simplement : 'Go see the registration desk' pour les personnes ne rentrant pas dans les cas précédents.
+Créer une autre variable de type String contenant le message à afficher dans le cas où nous sommes un jour de weekend.
 
+2. Créer une nouvelle variable correspondant au jour actuel de la semaine, en appelant une méthode sur la variable `myDate`. Tester cette variable pour savoir si le jour actuel est un jour de semaine ou du weekend. En fonction de la réponse, afficher dans la console le message correspondant.
+
+3. En conservant ce premier test, ajouter la nouvelle condition suivante : en semaine et après vendredi 17h, afficher le message du weekend. Pour cela, créer une nouvelle variable correspondant à l'heure actuelle, toujours à partir de notre variable initiale *myDate*, puis tester cette variable.
+
+4. De la même manière que pour le **3.**, créer une nouvelle condition si nous sommes un lundi avant 9h, afficher le message du weekend.
+
+Votre programme est réalisé, mais il difficile de le tester pour savoir si toutes les conditions sont valides. Pour cela, créer en début de programme une variable *isTesting* de type *booléen* :
+- Test activé : lancer notre programme en rentrant manuellement le jour et l'heure pour le tester.
+- Test désactivé : faire tourner le programme avec le jour et l'heure du moment.
+
+1. Si *isTesting* est `true`, alors la variable correspondant au jour de la semaine n'est plus reliée au jour actuel, mais à un jour fictif demandé à l'utilisateur via la commande `prompt()`. Il en va de même pour la variable contenant l'heure.
+
+2. Si *isTesting* est `false`, le programme se lance avec le jour et l'heure du moment.
 
 ## Ex 3 - Les fonctions
 
 Vous allez programmer la logique du jeu Pierre, Feuille, Ciseau. Vous jouerez contre l'ordinateur. Pour se souvenir des [règles, cliquer ici](https://www.pierrefeuilleciseaux.fr/pierre-feuille-ciseaux-les-regles-classiques/).
 
 Notre code va se décomposer en 4 parties :
+
 * Récupérer le choix de l'utilisateur
+
 * Récupérer le choix du programme
+
 * Comparer les choix
+
 * Annoncer le gagnant
 
-1. Créer une fonction `getUserChoice()` qui prend en paramètre un seul argument `userInput`
 
-2. Puisque nous ne pouvons pas être certains que l'utilisateur va taper 'Rock' ou 'rock', nous devons être insensible à la casse : nous allons dans un premier temps utiliser la fonction [`toLowerCase()`](https://www.w3schools.com/jsref/jsref_tolowercase.asp) pour transformer en minuscules la chaine de caractères `userInput`.
+1. Créer un variable `var playerInput = prompt("Your choice ( rock, paper, scissors) ?")`correspondant au choix de l'utilisateur.
 
-3. Nous devons aussi nous assurer que l'utilisateur rentre bien un des trois choix : 'rock', 'paper', ou 'scissors'.
-A l'intérieur de la fonction `getUserChoice()`, écrire une condition qui vérifie que la valeur entrée par l'utilisateur est bien l'une de ces trois valeurs attendues. Si c'est le cas, la fonction retourne la chaine de caractères `userInput`, sinon afficher un message d'erreur dans la console.
+2. Créer une fonction `getPlayerChoice()` qui prend en paramètre un seul argument `playerInput`
 
-4. Maintenant c'est à l'ordinateur de faire un choix.
-Créer une nouvelle fonction `getComputerChoice()` qui ne prend pas de paramètre.
-A l'intérieur, en utilisant la fonction [`Math.random()`](https://www.w3schools.com/jsref/jsref_random.asp), tirer un nombre aléatoire entre 0 et 2 inclus : [0;2]. Suivant le résultat, la fonction doit retourner une valeur parmi {'rock', 'paper', 'scissors'}.
+3. Puisque nous ne pouvons pas être certains que l'utilisateur va taper 'Rock' ou 'rock', nous devons être insensible à la casse : nous allons dans un premier temps utiliser la fonction [`toLowerCase()`](https://www.w3schools.com/jsref/jsref_tolowercase.asp) pour transformer en minuscules la chaine de caractères `playerInput`.
+
+4. Nous devons aussi nous assurer que l'utilisateur rentre bien un des trois choix : 'rock', 'paper', ou 'scissors'.
+   A l'intérieur de la fonction `getPlayerChoice()`, écrire une condition qui vérifie que la valeur entrée par l'utilisateur est bien l'une de ces trois valeurs attendues. Si c'est le cas, la fonction retourne la chaine de caractères `playerInput`, sinon afficher un message d'erreur dans la console.
+
+5. C'est maintenant à l'ordinateur de faire un choix.
+   Créer une nouvelle fonction `getComputerChoice()` qui ne prend pas de paramètre.
+   A l'intérieur, en utilisant la fonction [`Math.random()`](https://www.w3schools.com/jsref/jsref_random.asp), tirer un nombre aléatoire entre 0 et 2 inclus : [0;2]. Suivant le résultat, la fonction doit retourner une valeur parmi {'rock', 'paper', 'scissors'}.
 
 Maintenant, nous devons déterminer le gagnant.
 
-5. Créer une fonction `determineWinner()` qui prend deux paramètres `userChoice` et `computerChoice`
+6. Créer une fonction `findWinner()` qui prend deux paramètres, `playerChoice` et `computerChoice`.
 
 Cette fonction va comparer les choix et va retourner un de ces 3 résultats :
+
 * Tied : égalité
+
 * Won : l'utilisateur a gagné
+
 * Lost : l'utilisateur a perdu
 
-6. Commencons par le cas d'égalité
-A l'intérieur de la fonction `determineWinner()`, écrire une condition qui vérifie si le choix de l'utilisateur est égal à celui de l'ordinateur. Si c'est le cas, retourner la chaîne de caractères 'Tied'.
 
-7. Si ce n'est pas une égalité alors quelqu'un a gagné. Commencer par vérifier si `userChoice` est `rock`. A l'intérieur de cette condition, vérifier si le choix de l'ordinateur est 'scissors'. Si oui, alors retourner 'Won'; sinon retourner 'Lost'.
+7. Cas d'égalité.
+   A l'intérieur de la fonction `findWinner()`, écrire une condition qui vérifie si le choix de l'utilisateur est égal à celui de l'ordinateur. Si c'est le cas, retourner la chaîne de caractères 'Tied'.
 
-8. Ensuite, écrire une nouvelle condition pour déterminer si le choix de l'utilisateur est 'paper'. A l'intérieur de cette condition, en fonction du choix de l'ordinateur, retourner une valeur parmi {'Lost', 'Won'}.
+8. Si ce n'est pas une égalité alors quelqu'un a gagné. Commencer par vérifier si `playerChoice` est `rock`. A l'intérieur de cette condition, vérifier si le choix de l'ordinateur est 'scissors'. Si oui, alors retourner 'Won'; sinon retourner 'Lost'.
 
-9. Traiter maintenant le cas où l'utilisateur a choisi 'scissors'.
+9. Ensuite, écrire une nouvelle condition pour déterminer si le choix de l'utilisateur est 'paper'. A l'intérieur de cette condition, en fonction du choix de l'ordinateur, retourner une valeur parmi {'Lost', 'Won'}.
 
-10. Nos fonctions sont prêtes, nous pouvons maintenant commencer le jeu.
-Créer une fonction `playGame()` à l'intérieur de laquelle créer une variable `uChoice` qui prend pour valeur le résultat de la fonction `getUserChoice()` ; ajouter l'argument de votre choix : 'rock', 'paper', ou 'scissors'.
-Récupérer le résultat de l'appel de fonction `getComputerChoice()` dans une autre variable : `computerChoice`.
-Afficher chacune de ces variables dans la console.
+10. Traiter maintenant le cas où l'utilisateur a choisi 'scissors'.
 
-11. Affichons maintenant le vainqueur.
-A l'intérieur de la fonction `playGame()`, appeller la fonction `determineWinner()` avec en paramètre les variables `uChoice` et `computerChoice`. Pour connaitre le vainqueur vous devez mettre l'appel de la fonction à l'intérieur d'un `console.log()`.
-Maintenant appeler la fonction `playGame()`
+11.  Nos fonctions sont prêtes, nous pouvons maintenant commencer le jeu.
+    Créer une fonction `playGame()` à l'intérieur de laquelle créer une variable `uChoice` qui prend pour valeur le résultat de la fonction `getPlayerChoice()` ; ajouter l'argument de votre choix : 'rock', 'paper', ou 'scissors'.
+    Récupérer le résultat de l'appel de fonction `getComputerChoice()` dans une autre variable : `computerChoice`.
+    Afficher chacune de ces variables dans la console.
 
-11. On va ajouter un petit code secret (cheat code) afin d'être certain de gagner dans tous les cas : si l'utilisateur entre 'bomb' alors il a gagné. Modifier votre code en fonction.
+12.  Affichons maintenant le vainqueur.
+    A l'intérieur de la fonction `playGame()`, appeller la fonction `findWinner()` avec en paramètre les variables `uChoice` et `computerChoice`. Pour connaitre le vainqueur vous devez mettre l'appel de la fonction à l'intérieur d'un `console.log()`.
+    Maintenant appeler la fonction `playGame()`
+
+13.  On va ajouter un petit code secret (cheat code) afin d'être certain de gagner dans tous les cas : si l'utilisateur entre 'bomb' alors il a gagné. Modifier votre code en fonction.
 
 ## Ex 4 - Les tableaux
 
@@ -154,6 +193,7 @@ Vous aurez besoin de la [documentation sur les tableaux](https://developer.mozil
 Les baleines traduisent les phrases comme : 'Turpentine and turtles' par: 'UEIEAUE'.
 
 Comment ? Il y a trois règles simples : 
+
 - pas de consonnes, que des voyelles
 - pas d'espace
 - toutes les lettres en majuscules (uppercase).
@@ -167,7 +207,7 @@ Pour faire cette traduction, nous allons utiliser des boucles.
 3. On aura besoin de stocker la chaine traduite dans un tableau. Pour cela, créer une variable `resultArray` dont la valeur est un tableau vide, pour le moment.
 
 4. Essayons maintenant de trouver toutes les voyelles dans notre chaine initiale : on peut le faire en vérifiant si chaque lettre de notre texte est une voyelle. Pour cela, on peut regarder si la première lettre est une voyelle, puis la deuxième, etc.
-Créer donc une boucle qui parcourt toutes les lettres de notre chaine de caractères. A l'intérieur de cette boucle, afficher la lettre courante dans la console.
+   Créer donc une boucle qui parcourt toutes les lettres de notre chaine de caractères. A l'intérieur de cette boucle, afficher la lettre courante dans la console.
 
 5. Maintenant nous devons vérifier si la lettre courante est une voyelle ; autrement dit, si la lettre courante est une lettre du tableau `vowels`. Utiliser la méthode `indexOf` des tableaux pour le faire.
 
@@ -189,7 +229,7 @@ Vous devez avoir terminé le cours 8 de Codeacademy ( exercices 1 à 7 ) sur les
 
 Nous avons besoin dans un premier temps d'une structure de données permettant de stocker des informations multiples sur notre équipe : créer une variable 'team' dont la valeur est un objet vide.
 
-3. Notre équipe a des joueurs qui jouent des matchs. Nous voulons représenter les deux. Ajouter deux propriétés à votre objet : `players` et  `games` toutes les deux étant des tableaux vides.
+3. Notre équipe possède d'une part un ensemble de joueurs et d'autre part un ensemble de match joués. Nous voulons représenter les deux. Ajouter deux propriétés à votre objet : `players` et  `games` toutes les deux étant des tableaux vides.
 
 4. Remplir le tableau `players` avec des données sous ce format :
 
@@ -227,7 +267,6 @@ Nous avons besoin dans un premier temps d'une structure de données permettant d
 
 13. Bonus: Trier les joueurs par ordre alphabétique.
 
-
 ## Ex 7 - Listing d'articles sur un site marchand
 
 Nous allons essayer de nous rapprocher d'un site marchand.
@@ -247,7 +286,7 @@ https://www.tutorialrepublic.com/javascript-tutorial/javascript-dom-manipulation
 
 https://dom-tutorials.appspot.com/static/index.html
 
-### Administrer un catalogue d'articles depuis une page web 
+### Administrer un catalogue d'articles depuis une page web
 
 1. Parcourir les articles fournis pour les afficher un à un dans la console
 
@@ -279,15 +318,16 @@ Pour rendre l'utilisation de votre application plus facile, nous allons maintena
 
 1. Charger [Bootstrap 4.3](https://getbootstrap.com/docs/4.3/getting-started/introduction/) dans le projet.
 
-1. Afficher les articles et leurs contacts dans un tableau, en utilisant un tableau depuis la documentation de Bootstrap.
+2. Afficher les articles et leurs contacts dans un tableau, en utilisant un tableau depuis la documentation de Bootstrap.
 
-2. Faire en sorte qu'en ajoutant un nouvel objet, il s'ajoute aussi dans le tableau.
+3. Faire en sorte qu'en ajoutant un nouvel objet, il s'ajoute aussi dans le tableau.
 
-3. Adapter le filtre et le tri au tableau.
+4. Adapter le filtre et le tri au tableau.
 
-4. Transformer le filtre d'un champ texte en liste déroulante basée sur votre data. Si un traduction est disponible, l'afficher à la place du nom du type.
+5. Transformer le filtre d'un champ texte en liste déroulante basée sur votre data. Si un traduction est disponible, l'afficher à la place du nom du type.
 
 ### Fonctionnalités bonus
+
 1. Ajouter une checkbox au début de chaque ligne pour pouvoir sélectionner un ou plusieurs articles.
 
 2. Quand des articles sont sélectionnés, afficher un bouton "Ajouter au panier".
