@@ -1,27 +1,29 @@
-# DA - Activités Javascript
+# Activités Javascript
 
-## Pour la promotion Data Aspergers 2020
+Au cours de cette activité, nous vous guiderons dans la réalisation des modules de 1 à 8 du [cours "Introduction to JavaScript" du site Codecademy](https://www.codecademy.com/learn/introduction-to-javascript).
 
-Afin de faire ces exercices, il est préférable d'avoir réalisé les tutoriels de 1 à 6 du [cours "Introduction to JavaScript" du site Codecademy](https://www.codecademy.com/learn/introduction-to-javascript).
-Une fois réalisés, ces exercices vous permettront de valider les acquis.
+Une fois le ou les modules Codecademy réalisés, chaque exercice vous permettra de valider les acquis.
 
-## Modalités de rendu.
+## Modalités de rendu
 
 Tout votre travail doit être fait en utilisant **Git**. Votre avancement devra être présenté dans des commits, sous la forme suivante :
 
 - Un commit minimum par exercice, avec un message reprenant l'intitulé de l'exercice
-- Chaque commit contient les modifications de code **et** une modification du sujet pour renseigner l'avancement. 
+- Chaque commit contient les modifications de code dans un répertoire d'exercice
 
-( Exemple de commit )
-Exemple pour le [premier exercice](https://github.com/campus-digital-grenoble/alternance-rattrapage-mobile-js#mise-en-place-dune-page) :
+Exemple pour le premier exercice :
 
-<img width="956" alt="git-commit-list" src="https://user-images.githubusercontent.com/632197/42624459-bc56d8ac-85c5-11e8-83a5-b9058dd9c938.png">
+<img width="956" alt="git-commit-list" src="https://user-images.githubusercontent.com/632197/78457023-9fc00900-76a7-11ea-800f-16e3782dae48.png">
 
-*Les fichiers readme sont [au format Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Pour chaque exercice que vous compléterez, cochez la case dans le sujet en rajoutant une croix :* 
-[Exemple de 1er commit](https://user-images.githubusercontent.com/632197/42624447-b7be13a0-85c5-11e8-8c31-4e2a1b191e45.png)
-[Exemple de 2nd commit](https://user-images.githubusercontent.com/632197/42624453-ba0e3568-85c5-11e8-9e49-c495b5edee2c.png)
+*Les fichiers readme sont [au format Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Pour chaque exercice que vous compléterez, vous pouvez répondre aux questions et ajouter vos commentaires directement sur ce fichier.* 
 
-➡️ **Commencez donc par forker ce repo, et cloner votre fork. Vous aurez ainsi un projet dont vous serez propriétaire, qui contiendra ce readme à compléter**
+➡️ **Setup Git**
+- Forker ce repo
+- Cloner votre fork
+
+Vous aurez ainsi un projet dont vous serez propriétaire, qui contiendra ce readme à compléter et tout votre code.
+
+**Cette étape est essentielle, assurez vous bien de travailler sur votre fork.**
 
 ## Ex 0 - Lecture de code JavaScript.
 
@@ -57,6 +59,12 @@ Que se passe-t-il et pourquoi ?
 
 ## Ex 1 - Les variables
 
+👉 Suivez le module suivant sur **Codecademy** :
+
+[Introduction to JavaScript — 1 | Introduction](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-introduction)
+
+---
+
 La température aujourd'hui est de 294 Kelvins.
 
 1. Pour commencer, créer une variable `kelvins` qui prend pour valeur 294;
@@ -84,6 +92,12 @@ et relancer le programme.
 
 ## Ex 2 - Les conditions
 
+👉 Suivez le module suivant sur **Codecademy** :
+
+[Introduction to JavaScript — 2 | Conditionals](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-control-flow)
+
+---
+
 Le site [https://estcequecestbientotleweekend.fr/](https://estcequecestbientotleweekend.fr/) affiche un message selon le jour et l'heure dans la semaine : pas du tout, pas encore, bientôt, presque, c'est le weekend, etc... ). 
 Vous allez ici **récréer cette logique dans la console du navigateur**.
 
@@ -109,11 +123,19 @@ Votre programme est réalisé, mais il difficile de le tester pour savoir si tou
 - Test activé : lancer notre programme en rentrant manuellement le jour et l'heure pour le tester.
 - Test désactivé : faire tourner le programme avec le jour et l'heure du moment.
 
-1. Si *isTesting* est `true`, alors la variable correspondant au jour de la semaine n'est plus reliée au jour actuel, mais à un jour fictif demandé à l'utilisateur via la commande `prompt()`. Il en va de même pour la variable contenant l'heure.
+1. Si **isTesting** est `true`, alors la variable correspondant au jour de la semaine n'est plus reliée au jour actuel, mais à un jour fictif demandé à l'utilisateur via la commande `prompt()`. Il en va de même pour la variable contenant l'heure.
 
-2. Si *isTesting* est `false`, le programme se lance avec le jour et l'heure du moment.
+2. Si **isTesting** est `false`, le programme se lance avec le jour et l'heure du moment.
 
 ## Ex 3 - Les fonctions
+
+👉 Suivez les modules suivant sur **Codecademy** :
+
+[Introduction to JavaScript — 3 | Functions](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-functions)
+
+[Introduction to JavaScript — 4 | Scope](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-scope)
+
+---
 
 Vous allez programmer la logique du jeu Pierre, Feuille, Ciseau. Vous jouerez contre l'ordinateur. Pour se souvenir des [règles, cliquer ici](https://www.pierrefeuilleciseaux.fr/pierre-feuille-ciseaux-les-regles-classiques/).
 
@@ -176,6 +198,13 @@ Cette fonction va comparer les choix et va retourner un de ces 3 résultats :
 
 ## Ex 4 - Les tableaux
 
+👉 Suivez le module suivant sur **Codecademy** :
+
+[Introduction to JavaScript — 5 | Arrays](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-arrays)
+
+---
+
+Nous allons retravailler le contenu de ce tableau : 
 `var secretMessage = ["Learning", "isn't", "about", "what", "you", "get", "easily", "the", "first", "time,", "it's", "about", "what", "you", "can", "figure", "out.", "-2015,", "Chris", "Pine,", "Learn", "JavaScript"];`
 
 Vous aurez besoin de la [documentation sur les tableaux](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), notamment pour trouver les bonnes méthodes.
@@ -189,6 +218,14 @@ Vous aurez besoin de la [documentation sur les tableaux](https://developer.mozil
 7. Utiliser la méthode `.join` pour afficher le message secret dans la console.
 
 ## Ex 5 - Les boucles
+
+👉 Suivez les modules suivant sur **Codecademy** :
+
+[Introduction to JavaScript — 6 | Loops](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-loops)
+
+[Introduction to JavaScript — 7 | Iterators](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-iterators)
+
+---
 
 Les baleines traduisent les phrases comme : 'Turpentine and turtles' par: 'UEIEAUE'.
 
@@ -224,7 +261,11 @@ Pour faire cette traduction, nous allons utiliser des boucles.
 
 ## Ex 6 - Les objets
 
-Vous devez avoir terminé le cours 8 de Codeacademy ( exercices 1 à 7 ) sur les Objets pour faire cet exercice.
+👉 Suivez le module suivant sur **Codecademy** :
+
+[Introduction to JavaScript — 8 | Objects](https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-objects)
+
+---
 
 1. Compléter le petit exercice qui se trouve en commentaire dans le fichier javascript de l'exercice.
 
