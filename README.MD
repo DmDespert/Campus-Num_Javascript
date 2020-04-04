@@ -64,7 +64,7 @@ La température aujourd'hui est de 294 Kelvins.
 Nous pouvons aussi exprimer une température en Celsius. La température en Celsius est de 273 degrés inférieure à celle en Kelvins.
 
 2. Convertir la température en Kelvins en stockant le résultat dans une variable nommée `celsius`.
-   Ecrire un commentaire pour expliquer cette ligne de code.
+Ecrire un commentaire pour expliquer cette ligne de code.
 
 Nous pouvons aussi exprimer une température en Fahrenheit avec la formule :
 `Fahrenheits = Celsius * (9/5) + 32`
@@ -76,7 +76,7 @@ Lorsque nous faisons cette conversion, il est très probable d'avoir un nombre a
 4. En utilisant la méthode [`.floor()`](https://www.w3schools.com/jsref/jsref_floor.asp) de la bibliothèque standard, modifier le résultat de la variable `fahrenheits` pour obtenir un entier. Ecrire un commentaire pour expliquer cette ligne de code.
 
 5. Nous voulons modifier le programme afin de demander la température en Kelvins à l'utilisateur et lui afficher ensuite les conversions dans la console du navigateur.
-   Remplacer la première ligne de code par :
+Remplacer la première ligne de code par :
 
 `var kelvins = prompt("Quelle est la température en Kelvins aujourd'hui ?");`
 
@@ -193,6 +193,9 @@ Vous aurez besoin de la [documentation sur les tableaux](https://developer.mozil
 Les baleines traduisent les phrases comme : 'Turpentine and turtles' par: 'UEIEAUE'.
 
 Comment ? Il y a trois règles simples : 
+- pas de consonnes, que des voyelles
+- pas d'espace
+- toutes les lettres en majuscules (uppercase).
 
 - pas de consonnes, que des voyelles
 - pas d'espace
