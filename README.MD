@@ -1,22 +1,21 @@
 # Activités Javascript
 
 ## Sommaire
-- [Modalités de rendu](modalités-de-rendu)
-- [Ex 0 - Lecture de code JavaScript](ex-0---lecture-de-code-javascript)
-  1. [Commentaires](section-1--commentaires)
-  2. [Utilisation de la console](section-2--utilisation-de-la-console)
-  3. [Undefined](section-3--undefined)
-- [Ex 1 - Les variables](ex-1---les-variables)
-- [Ex 2 - Les conditions](ex-2---les-conditions)
-- [Ex 3 - Les fonctions](ex-3---les-fonctions)
-- [Ex 4 - Les tableaux](ex-4---les-tableaux)
-- [Ex 5 - Les boucles](ex-5---les-boucles)
-- [Ex 6 - Les objets](ex-6---les-objets)
-- [Ex 7 - Listing d'articles sur un site marchand](ex-7---listing-darticles-sur-un-site-marchand)
-  1. [Administrer un catalogue d'articles depuis une page web](administrer-un-catalogue-darticles-depuis-une-page-web)
-  2. [Mise en forme](mise-en-forme)
-  3. [Fonctionnalités bonus](fonctionnalités-bonus)
-- [Aller plus loin](aller-plus-loin)
+- [Modalités de rendu](#modalités-de-rendu)
+- [Ex 0 - Lecture de code JavaScript](#ex-0---lecture-de-code-javascript)
+  1. [Commentaires](#section-1--commentaires)
+  2. [Utilisation de la console](#section-2--utilisation-de-la-console)
+  3. [Undefined](#section-3--undefined)
+- [Ex 1 - Les variables](#ex-1---les-variables)
+- [Ex 2 - Les conditions](#ex-2---les-conditions)
+- [Ex 3 - Les fonctions](#ex-3---les-fonctions)
+- [Ex 4 - Les tableaux](#ex-4---les-tableaux)
+- [Ex 5 - Les boucles](#ex-5---les-boucles)
+- [Ex 6 - Les objets](#ex-6---les-objets)
+- [Ex 7 - Listing d'articles sur un site marchand](#ex-7---listing-darticles-sur-un-site-marchand)
+  1. [Administrer un catalogue d'articles depuis une page web](#administrer-un-catalogue-darticles-depuis-une-page-web)
+  2. [Mise en forme](#mise-en-forme)
+  3. [Fonctionnalités bonus](#fonctionnalités-bonus)
 
 ## Introduction
 Au cours de cette activité, nous vous guiderons dans la réalisation des modules de 1 à 8 du [cours "Introduction to JavaScript" du site CodeCademy](https://www.CodeCademy.com/learn/introduction-to-javascript). Les sections à suivre sont évidemment uniquement le contenu gratuit. Néanmoins, il faudra vous créer un compte sur la plateforme.
