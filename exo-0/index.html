@@ -12,19 +12,24 @@
         /* Section 1 */   
 
         var name = "Joe";
-        var city = 'London';
-        var age = 32;
+        let city = 'London';
+        const age = 32;
         var isRed = true;
         var isOld = age > 80;
 
         var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
 
+        /**
+            info function
+            @param{number} height
+            @param{number} weight
+        */
         function info(height, weight) {
             if (height > 180) {
-                console.log('Vous êtes grand');
+                console.log('You\'re tall');
             }
             if (weight < 0) {
-                console.log('oups, there is a problem');
+                console.log('Oups, there is a problem');
             } else if ( weight < 15) {
                 console.log('Are you that slim ?')
             } else {
@@ -41,6 +46,11 @@
 
         info(myHeight + 15, myWeight - 100);
 
+        /**
+            toUpper function
+            @param{string} variable
+            return {string}
+        */
         function toUpper(variable) {
             return variable.toUpperCase();
         }
@@ -53,9 +63,9 @@
 
         /* Section 2: */
 
-        // afficher la ville dans laquele Joe vit.     
+        // afficher la ville dans laquelle Joe vit.     
 
-        // afficher si Joe est roux ou pas.
+        // afficher si Joe est roux ou non.
 
         /* Section 3 */
 

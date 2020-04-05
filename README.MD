@@ -1,6 +1,25 @@
 # Activités Javascript
 
-Au cours de cette activité, nous vous guiderons dans la réalisation des modules de 1 à 8 du [cours "Introduction to JavaScript" du site Codecademy](https://www.codecademy.com/learn/introduction-to-javascript). Les sections à suivre sont évidemment uniquement le contenu gratuit. En totu cas, pour accéder à ce cours, il vous faudra vous créer un compte sur la plateforme.
+## Sommaire
+- [Modalités de rendu](modalités-de-rendu)
+- [Ex 0 - Lecture de code JavaScript](ex-0---lecture-de-code-javascript)
+  1. [Commentaires](section-1--commentaires)
+  2. [Utilisation de la console](section-2--utilisation-de-la-console)
+  3. [Undefined](section-3--undefined)
+- [Ex 1 - Les variables](ex-1---les-variables)
+- [Ex 2 - Les conditions](ex-2---les-conditions)
+- [Ex 3 - Les fonctions](ex-3---les-fonctions)
+- [Ex 4 - Les tableaux](ex-4---les-tableaux)
+- [Ex 5 - Les boucles](ex-5---les-boucles)
+- [Ex 6 - Les objets](ex-6---les-objets)
+- [Ex 7 - Listing d'articles sur un site marchand](ex-7---listing-darticles-sur-un-site-marchand)
+  1. [Administrer un catalogue d'articles depuis une page web](administrer-un-catalogue-darticles-depuis-une-page-web)
+  2. [Mise en forme](mise-en-forme)
+  3. [Fonctionnalités bonus](fonctionnalités-bonus)
+- [Aller plus loin](aller-plus-loin)
+
+## Introduction
+Au cours de cette activité, nous vous guiderons dans la réalisation des modules de 1 à 8 du [cours "Introduction to JavaScript" du site CodeCademy](https://www.CodeCademy.com/learn/introduction-to-javascript). Les sections à suivre sont évidemment uniquement le contenu gratuit. Néanmoins, il faudra vous créer un compte sur la plateforme.
 
 Une fois le ou les modules Codecademy réalisés, chaque exercice vous permettra de valider les acquis.
 
@@ -217,6 +236,7 @@ Vous aurez besoin de la [documentation sur les tableaux](https://developer.mozil
 6. Utiliser une méthode pour remplacer les mots 'get', 'right', 'the', 'first', 'time' par 'know'.
 7. Utiliser la méthode `.join` pour afficher le message secret dans la console.
 
+
 ## Ex 5 - Les boucles
 
 👉 Suivez les modules suivant sur **Codecademy** :
@@ -258,6 +278,25 @@ Pour faire cette traduction, nous allons utiliser des boucles.
 8. En affichant la valeur de `resultArray`, on observe qu'il y a des virgules entre chaque élément. Utiliser les méthodes `join()` et `toUpperCase()` pour un bon formatage.
 
 9. Lancer votre programme, chanter la traduction et être heureux de tout ce que vous êtes parvenu à faire jusqu'alors !
+
+
+### Aller plus loin avec les Arrays et boucles
+
+Faire une fonction qui compare 2 tableaux. *Suffit-il de faire arr1 == arr2 ? Ou arr1 === arr2 ?*
+Entrées (paramètres) :
+ - arr1 : Array
+ - arr2 : Array
+
+Sortie (valeur de retour) :
+Vrai si les 2 tableaux ont strictement les mêmes valeurs (mêmes tailles, mêmes valeurs).
+À toi de préciser le comportement en cas de valeurs undefined ou NaN.
+
+#### Valeurs de tests
+Sois inspiré !
+Pour t'aider : 
+var arr1 = [1.3, Number.Infinity, "hello", [, 42, NaN, null]];
+var arr2 = [1.3, Number.Infinity, "hello", [, 42, NaN, null]];
+*Oui, ces arrays sont valides !*
 
 ## Ex 6 - Les objets
 
@@ -310,6 +349,19 @@ Nous avons besoin dans un premier temps d'une structure de données permettant d
 12. Ecrire une fonction qui permet de trouver le joueur le plus âgé.
 
 13. Bonus: Trier les joueurs par ordre alphabétique.
+
+
+### Aller plus loin avec les objets
+
+Faire une fonction qui compare 2 objets. *Suffit-il de faire o1 == o2 ? Ou o1 === o2 ?*
+Entrées (paramètres) :
+ - o1 : Object
+ - o2 : Object
+
+Sortie (valeur de retour) :
+Vrai si les 2 objets ont strictement les mêmes propriétés et valeurs (même nombre de propriétés, avec les mêmes valeurs).
+À vous de préciser le comportement en cas de valeurs undefined ou NaN.
+
 
 ## Ex 7 - Listing d'articles sur un site marchand
 
