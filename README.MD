@@ -1,6 +1,7 @@
 # Activités Javascript
 
 ## Sommaire
+- [Introduction](#introduction)
 - [Modalités de rendu](#modalités-de-rendu)
 - [Ex 0 - Lecture de code JavaScript](#ex-0---lecture-de-code-javascript)
   1. [Commentaires](#section-1--commentaires)
@@ -16,9 +17,17 @@
   1. [Administrer un catalogue d'articles depuis une page web](#administrer-un-catalogue-darticles-depuis-une-page-web)
   2. [Mise en forme](#mise-en-forme)
   3. [Fonctionnalités bonus](#fonctionnalités-bonus)
+- [Bonus](#bonus)
+  1. [Arithmétique : Aller plus loin](arithmétique--aller-plus-loin)
+  2. [Arrays et boucles : Découvrir davantage](arrays-et-boucles--découvrir-davantage)
+  3. [Objets : Découvrir davantage](objets--découvrir-davantage)
+  4. [Fonctions : Découvrir davantage](fonctions--découvrir-davantage)
+    - [Fiabiliser son code](fiabiliser-son-code)
+    - [Fonctions variadiques : Nombre variable d'arguments](fonctions-variadiques--nombre-variable-darguments)
+
 
 ## Introduction
-Au cours de cette activité, nous vous guiderons dans la réalisation des modules de 1 à 8 du [cours "Introduction to JavaScript" du site CodeCademy](https://www.CodeCademy.com/learn/introduction-to-javascript). Les sections à suivre sont évidemment uniquement le contenu gratuit. Néanmoins, il faudra vous créer un compte sur la plateforme.
+Au cours de cette activité, nous vous guiderons dans la réalisation des modules de 1 à 8 du [cours "Introduction to JavaScript" du site Codecademy](https://www.codecademy.com/learn/introduction-to-javascript).
 
 Une fois le ou les modules Codecademy réalisés, chaque exercice vous permettra de valider les acquis.
 
@@ -235,7 +244,6 @@ Vous aurez besoin de la [documentation sur les tableaux](https://developer.mozil
 6. Utiliser une méthode pour remplacer les mots 'get', 'right', 'the', 'first', 'time' par 'know'.
 7. Utiliser la méthode `.join` pour afficher le message secret dans la console.
 
-
 ## Ex 5 - Les boucles
 
 👉 Suivez les modules suivant sur **Codecademy** :
@@ -277,25 +285,6 @@ Pour faire cette traduction, nous allons utiliser des boucles.
 8. En affichant la valeur de `resultArray`, on observe qu'il y a des virgules entre chaque élément. Utiliser les méthodes `join()` et `toUpperCase()` pour un bon formatage.
 
 9. Lancer votre programme, chanter la traduction et être heureux de tout ce que vous êtes parvenu à faire jusqu'alors !
-
-
-### Aller plus loin avec les Arrays et boucles
-
-Faire une fonction qui compare 2 tableaux. *Suffit-il de faire arr1 == arr2 ? Ou arr1 === arr2 ?*
-Entrées (paramètres) :
- - arr1 : Array
- - arr2 : Array
-
-Sortie (valeur de retour) :
-Vrai si les 2 tableaux ont strictement les mêmes valeurs (mêmes tailles, mêmes valeurs).
-À toi de préciser le comportement en cas de valeurs undefined ou NaN.
-
-#### Valeurs de tests
-Sois inspiré !
-Pour t'aider : 
-var arr1 = [1.3, Number.Infinity, "hello", [, 42, NaN, null]];
-var arr2 = [1.3, Number.Infinity, "hello", [, 42, NaN, null]];
-*Oui, ces arrays sont valides !*
 
 ## Ex 6 - Les objets
 
@@ -348,19 +337,6 @@ Nous avons besoin dans un premier temps d'une structure de données permettant d
 12. Ecrire une fonction qui permet de trouver le joueur le plus âgé.
 
 13. Bonus: Trier les joueurs par ordre alphabétique.
-
-
-### Aller plus loin avec les objets
-
-Faire une fonction qui compare 2 objets. *Suffit-il de faire o1 == o2 ? Ou o1 === o2 ?*
-Entrées (paramètres) :
- - o1 : Object
- - o2 : Object
-
-Sortie (valeur de retour) :
-Vrai si les 2 objets ont strictement les mêmes propriétés et valeurs (même nombre de propriétés, avec les mêmes valeurs).
-À vous de préciser le comportement en cas de valeurs undefined ou NaN.
-
 
 ## Ex 7 - Listing d'articles sur un site marchand
 
@@ -430,6 +406,7 @@ Pour rendre l'utilisation de votre application plus facile, nous allons maintena
 _Vous pouvez ici changer la structure de données pour vous aider._
 
 3. Afficher le nombre d'articles et le prix total dans un panier d'achats. À la validation du panier, déduire les quantités disponibles des articles sélectionnés.
+
 
 ## Bonus
 Pour les plus téméraires ! Inutile de se lancer si les exercices précédents ne sont pas compris.
