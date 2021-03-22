@@ -7,23 +7,25 @@
 
         <h1>Exercice 0</h1>
 
-        <script type="text/javascript">
+        <script type="text/javascript"> // Déclaration da la balise html pour javascript
 
         /* Section 1 */   
 
-        var name = "Joe";
-        let city = 'London';
-        const age = 32;
-        var isRed = true;
-        var isOld = age > 80;
+        var name = "Joe"; // Déclaration de la variable 'name' avec la valeur 'Joe'
+        let city = 'London'; // Déclaration d'une variable let (valeur valable que dans un 'block')
+        const age = 32; // Déclaration d'une constante, la valeur ne peut être changée
+        var isRed = true; // Déclaration de la variable 'isRed'
+        var isOld = age > 80; // * * *
 
-        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber']; // Création d'une variable tableau
 
         /**
             info function
             @param{number} height
             @param{number} weight
         */
+
+        // Création d'une fonction nommée info qui retourne du texte en fonction de la hauteur
         function info(height, weight) {
             if (height > 180) {
                 console.log('You\'re tall');
@@ -37,13 +39,17 @@
             }
         }
 
+        // Déclaration de la fonction info avec ses paramètres
         info(165, 45);
 
+        // Création de variables avec les valeurs 175 et 86
         var myHeight = 175;
         var myWeight = 86;
 
+        // Déclaration de la fonction info avec les variables précédentes en paramètres
         info(myHeight, myWeight);
 
+        // Déclaration de la fonction info avec les variables précédentes et l'ajout de paramètres
         info(myHeight + 15, myWeight - 100);
 
         /**
@@ -51,10 +57,13 @@
             @param{string} variable
             return {string}
         */
+
+        // Création d'une fonction qui met en majuscule la variable passée
         function toUpper(variable) {
             return variable.toUpperCase();
         }
 
+        // Déclaration de la variable  upperName qui prend en valeur la fonction toUpper et la variable name
         var upperName = toUpper(name);
 
         for (i = 0; i < 3; i = i + 1) {
@@ -63,13 +72,29 @@
 
         /* Section 2: */
 
-        // afficher la ville dans laquelle Joe vit.     
+        // afficher la ville dans laquelle Joe vit.
+        function joeTown(isCity) {
+            console.log("Joe is from " + isCity);
+        }
+
+        joeTown(city);
 
         // afficher si Joe est roux ou non.
+        function isJoeRed(hairRed) {
+            answer = '';
+            if(hairRed === true) {
+                answer = 'Yes, Joe is ginger';
+            }
+            else {
+                answer = "Nope, he's not";
+            }
+            return answer;
+        }
 
         /* Section 3 */
 
-        // console.log(myVariable);
+        console.log(isJoeRed(isRed));
+        // Affiche le résultat de ma fonction isJoeRed dans la partie des 'logs' du navigateur.
 
         </script>
 
